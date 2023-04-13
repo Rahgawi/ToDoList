@@ -1,0 +1,21 @@
+<div class="date">
+        <form>
+          <label for="date">Datum:</label>
+          <input type="date" id="date" name="date" value="">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </form>
+
+
+     <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </div>
+
+
+      <i class="fas fa-trash">//trash
+      <i class="fas fa-check-circle">// checkbox

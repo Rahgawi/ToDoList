@@ -5,6 +5,7 @@ const filterOption = document.querySelector(".filter-todo");
 
 todoList.addEventListener("click" , deleteCheck);
 filterOption.addEventListener("change",filterTodo);
+todoBut
 
 
 

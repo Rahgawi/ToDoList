@@ -42,7 +42,24 @@ form button {
     outline:none;
     cursor:pointer;
 }
-
+.todo-checkbox {
+    margin-right: 10px;
+  }
+  
+  .delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Listenformatierung */
+  #todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
 
 
 

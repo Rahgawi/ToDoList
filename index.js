@@ -17,21 +17,25 @@
 
             const checkButton = document.createElement("button");
             checkButton.innerHTML ='<i class="fas fa-check-circle">';
+            checkButton.style.backgroundColor = "#097B76";
             newToDoL.appendChild(checkButton);
             checkButton.addEventListener("click",(e)=>{
             newToDoL.style.textDecoration = "line-through";
-            
+            checkButton.style.backgroundColor = "#097B76";
         })
 
             const removeButton = document.createElement("button");
             removeButton.innerHTML='<i class="fas fa-trash">' ;
+            removeButton.style.backgroundColor = "#097B76";
             newToDoL.appendChild(removeButton);
             removeButton.addEventListener("click",(e)=>{
             todoList.removeChild(newToDoL);
+            removeButton.style.backgroundColor = "#097B76";
             })
             
             const editButton = document.createElement("button");
             editButton.innerHTML='edit' ;
+            editButton.style.backgroundColor = "#097B76";
             newToDoL.appendChild(editButton);
             editButton.addEventListener("click",(e)=>{
                     

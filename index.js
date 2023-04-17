@@ -8,7 +8,9 @@
             e.preventDefault();
         
             var newToDoL = document.createElement('li');
-            newToDoL.innerText = todoInput.value;
+            let newToDoText = document.createElement('span');
+            newToDoText.innerText = todoInput.value;
+            newToDoL.appendChild(newToDoText);
             todoList.appendChild(newToDoL);
             todoInput.value = "";
             
@@ -35,18 +37,18 @@
             newToDoL.appendChild(editButton);
             editButton.addEventListener("click",(e)=>{
                     
-                todoList.appendChild(todoInput.value);
+                editTodo(newToDoL);
 
 
 
-               // for (let index = 0; index < .length; index++) {
-                  //  document.querySelectorAll('li')[index].outerText = todoInput.value;
-            
-                    
-               // }
-                
+              
             })
+            
+            function editTodo(todo){
+    
+                todo.firstChild.innerHTML= todoInput.value;
 
+            }
             
             
         

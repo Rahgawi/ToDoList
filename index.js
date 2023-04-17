@@ -8,7 +8,9 @@
             e.preventDefault();
         
             var newToDoL = document.createElement('li');
-            newToDoL.innerText = todoInput.value;
+            let newToDoText = document.createElement('span');
+            newToDoText.innerText = todoInput.value;
+            newToDoL.appendChild(newToDoText);
             todoList.appendChild(newToDoL);
             todoInput.value = "";
             
@@ -35,7 +37,7 @@
             newToDoL.appendChild(editButton);
             editButton.addEventListener("click",(e)=>{
                     
-                todoList.appendChild(todoInput.value);
+                editTodo(newToDoL);
 
 
 
@@ -46,7 +48,12 @@
                // }
                 
             })
+            
+            function editTodo(todo){
+    
+                todo.firstChild.innerHTML= todoInput.value;
 
+            }
             
             
         

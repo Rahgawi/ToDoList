@@ -44,7 +44,11 @@ form button {
 .todo-checkbox {
     margin-right: 10px;
   }
-  
+  .todo-container  li{
+list-style: none;
+/* background-color: white; */
+    }
+
   .delete-button {
     background-color: red;
     color: white;
@@ -52,7 +56,15 @@ form button {
     padding: 5px 10px;
     border-radius: 5px;
   }
-  
+  .todo-button {
+    background-color: #097b76;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
   
   /* Listenformatierung */
   #todo-list {

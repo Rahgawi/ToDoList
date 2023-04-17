@@ -19,6 +19,7 @@
 
             const checkButton = document.createElement("button");
             checkButton.innerHTML ='<i class="fas fa-check-circle">';
+            checkButton.classList.add('todo-button');
             checkButton.style.backgroundColor = "#097B76";
             newToDoL.appendChild(checkButton);
             checkButton.addEventListener("click",(e)=>{
@@ -28,6 +29,7 @@
 
             const removeButton = document.createElement("button");
             removeButton.innerHTML='<i class="fas fa-trash">' ;
+            removeButton.classList.add('todo-button');
             removeButton.style.backgroundColor = "#097B76";
             newToDoL.appendChild(removeButton);
             removeButton.addEventListener("click",(e)=>{
@@ -37,6 +39,7 @@
             
             const editButton = document.createElement("button");
             editButton.innerHTML='edit' ;
+            editButton.classList.add('todo-button');
             editButton.style.backgroundColor = "#097B76";
             newToDoL.appendChild(editButton);
             editButton.addEventListener("click",(e)=>{

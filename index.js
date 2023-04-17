@@ -41,12 +41,7 @@
 
 
 
-               // for (let index = 0; index < .length; index++) {
-                  //  document.querySelectorAll('li')[index].outerText = todoInput.value;
-            
-                    
-               // }
-                
+              
             })
             
             function editTodo(todo){
